@@ -25,16 +25,34 @@ li{
     list-style: none;
 }
 
-a:link{
+a:link {
     text-decoration: none;
-    color: blueviolet;
+    font-size: 20px;
+    color:  rgb(228, 11, 163);
+}
+
+a:visited{
+    color: rgb(248, 248, 250);
+}
+
+a:active{
+    color: yellow;
+}
+
+a:focus{
+    color: rgb(179, 233, 99);
+}
+
+a:hover{
+    color: burlywood;
 }
 
 
 .nabvar{
-    position: sticky;
+    position: fixed;
     top: 0;
-    background-color: aqua;
+    width: 100%;
+    background-color: rgb(31, 34, 34);
     display: flex;
     padding: 20px 20px;
 }
@@ -44,8 +62,9 @@ a:link{
     justify-content: space-around;
     align-items: center;
     margin: auto;
-    gap: 10px;
+    gap: 50px;
 }
+
 
 .principio{
     margin-left: 36%;
@@ -66,6 +85,12 @@ a:link{
     width: 400px; 
     margin-top: 30px;
     border-radius: 20px;
+}
+
+.bajar{
+    position: absolute;
+    top: 50px;
+    color: white;
 }
 
 .contenedor{
@@ -93,9 +118,14 @@ a:link{
 footer p{
     position: absolute;
     top: 1000px;
+    width: 100%;
     padding: 30px 20px;
     background-color: black;
     color:white;
     display: flex;
     justify-content: center;
+}
+
+section>p::selection{
+    background-color: yellowgreen;
 }
